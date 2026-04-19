@@ -1,43 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dental Education 101</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Dental Education 101</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #F8E2D4;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #B984DB;
+      color: #2e1a47;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .container {
+      background-color: #ffffff;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #7209B7;
+    }
+
+    button {
+      background-color: #E2BD6B;
+      color: black;
+      border: none;
+      padding: 10px 15px;
+      margin: 10px 10px 10px 0;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #d4a94f;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Dental Education Website</h1>
-    <p>Simple, patient-friendly oral health information</p>
-  </header>
+  <header>
+    <h1>Dental Education Website</h1>
+    <p>Simple, patient-friendly oral health information</p>
+  </header>
 
-  <div class="container">
-    <h2>Learn More About Oral Health</h2>
+  <div class="container">
+    <h2>Learn More About Oral Health</h2>
 
-    <button onclick="toggleInfo('cavities')">What are Cavities?</button>
-    <p id="cavities" style="display:none;">
-      Cavities are permanently damaged areas in the hard surface of your teeth that develop into tiny openings or holes caused by bacteria and tooth decay.
-    </p>
+    <button onclick="toggleInfo('cavities')">What are Cavities?</button>
+    <p id="cavities" style="display:none;">
+      Cavities are permanently damaged areas in the hard surface of your teeth that develop into tiny openings or holes caused by bacteria and tooth decay.
+    </p>
 
-    <button onclick="toggleInfo('gingivitis')">What is Gingivitis?</button>
-    <p id="gingivitis" style="display:none;">
-      Gingivitis is a mild form of gum disease that causes irritation, redness, and swelling of your gums, often due to poor oral hygiene.
-    </p>
+    <button onclick="toggleInfo('gingivitis')">What is Gingivitis?</button>
+    <p id="gingivitis" style="display:none;">
+      Gingivitis is a mild form of gum disease that causes irritation, redness, and swelling of your gums, often due to poor oral hygiene.
+    </p>
 
-    <button onclick="toggleInfo('periodontitis')">What is Periodontitis?</button>
-    <p id="periodontitis" style="display:none;">
-      Periodontitis is a serious gum infection that damages soft tissue and can destroy the bone supporting your teeth if untreated.
-    </p>
-  </div>
+    <button onclick="toggleInfo('periodontitis')">What is Periodontitis?</button>
+    <p id="periodontitis" style="display:none;">
+      Periodontitis is a serious gum infection that damages soft tissue and can destroy the bone supporting your teeth if untreated.
+    </p>
+  </div>
 
-  <script>
-    function toggleInfo(id) {
-      const info = document.getElementById(id);
-      if (info.style.display === "none") {
-        info.style.display = "block";
-      } else {
-        info.style.display = "none";
-      }
-    }
-  </script>
+  <script>
+    function toggleInfo(id) {
+      const info = document.getElementById(id);
+      if (info.style.display === "none") {
+        info.style.display = "block";
+      } else {
+        info.style.display = "none";
+      }
+    }
+  </script>
 </body>
 </html>
