@@ -12,4 +12,4 @@ I used HTML and CSS to build and style the website. I used Visual Studio Code as
 ## How to visit it
 You can visit the live website here: https://dcb-z.github.io/dental-education-101/
 
-GitHub repository: https://github.com/dcb-z
+GitHub repository:[ https://github.com/dcb-z](https://github.com/dcb-z/dental-education-101)
