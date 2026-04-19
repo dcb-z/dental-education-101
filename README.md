@@ -10,6 +10,6 @@ This project exists to make dental education more approachable for everyday user
 I used HTML and CSS to build and style the website. I used Visual Studio Code as my code editor and GitHub to store and manage the project files. I also used GitHub Pages to deploy the site so it can be viewed online. ChatGPT was used as an AI tool to help brainstorm wording, organize content, and troubleshoot parts of the project.
 
 ## How to visit it
-You can visit the live website here: 
+You can visit the live website here: https://dcb-z.github.io/dental-education-101/
 
 GitHub repository: 
