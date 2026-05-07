@@ -198,17 +198,25 @@ Healthy teeth vs Decayed teeth
 
   </div>
 
-    <button onclick="toggleInfo('periodontitis')">What is Periodontitis?</button>
-    <p id="periodontitis" style="display:none;">
-      Periodontitis is a serious gum infection that damages soft tissue and can destroy the bone supporting your teeth if untreated.
-    </p>
-      <h3 class="video-title">Watch to Learn about Periodontitis also known as Gum Disease</h3>
+ <button onclick="toggleInfo('periodontitis')">
+    What is Periodontitis?
+</button>
 
-  <video class="perio-video" controls>
-    <source src="Perio.mp4" type="video/mp4">
-  </video>
-    
-  </div>
+<div id="periodontitis" style="display:none;">
+
+    <p>
+        Periodontitis is a serious gum infection that damages soft tissue and can destroy the bone supporting your teeth if untreated.
+    </p>
+
+    <h3 class="video-title">
+        Watch to Learn About Periodontitis also known as Gum Disease
+    </h3>
+
+    <video class="perio-video" controls>
+        <source src="Perio.mp4" type="video/mp4">
+    </video>
+
+</div>
 
   <script>
     function toggleInfo(id) {
