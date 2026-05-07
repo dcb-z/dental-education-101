@@ -2,6 +2,17 @@
 <html>
 <head>
 <style>
+    .learn-section {
+    text-align: center;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
 .gingivitis-video,
 .perio-video {
     width: 50%;
@@ -119,11 +130,22 @@
 <body>
   <header>
     <h1>Dental Education 101</h1>
-    <p>Dental Education 101 is a beginner friendly educational website designed to share helpful dental information in a simple and easy-to-understand way. The site provides real content about dental topics, oral hygiene, and patient education in a clean and accessible format.</p>
+    <p>Dental Education 101 is a beginner friendly educational website designed to share helpful dental information in a simple and easy-to-understand way. The site provides content about dental oral health and patient education in a clean and accessible format.</p>
   </header>
 
   <div class="container">
+      <div class="learn-section">
     <h2>Learn More About Oral Health</h2>
+            
+    <div class="button-group">
+            <button onclick="toggleCavities()">What are Cavities?</button>
+            <button onclick="toggleInfo('gingivitis')">What is Gingivitis?</button>
+            <button onclick="toggleInfo('periodontitis')">What is Periodontitis?</button>
+        </div>
+
+    </div>
+
+</div>
 
    <button onclick="toggleCavities()">What are Cavities?</button>
 
@@ -218,7 +240,7 @@ Healthy teeth vs Decayed teeth
     <li>Can lead to loose teeth or tooth loss</li>
     <li>Often caused by plaque and tartar buildup</li>
     <li>Smoking and diabetes increase risk</li>
-    <li>Can be treated and managed by a dentist</li>
+    <li>Can be treated and managed by dental providers</li>
   </ul>
 
   <h3 class="video-title">Watch to Learn About Periodontitis</h3>
