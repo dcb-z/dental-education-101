@@ -232,53 +232,44 @@ Healthy teeth vs Decayed teeth
 
   </div>
 
- 
-</button>
+<button onclick="toggleInfo('periodontitis')">What is Periodontitis?</button>
 
-<h3>What is Periodontitis?</h3>
+<div id="periodontitis" style="display:none;">
 
-<p>
-Periodontitis is an advanced stage of gum disease that develops when gingivitis is left untreated. It happens when plaque and bacteria build up below the gumline, causing inflammation and infection that can damage the gums and the bone supporting your teeth.
-</p>
+  <h3>What is Periodontitis?</h3>
 
-<p>
-As periodontitis progresses, the gums may begin to pull away from the teeth, creating pockets where more bacteria can collect. Over time, this can lead to loose teeth, gum recession, bone loss, and even tooth loss if not properly treated.
-</p>
+  <p>
+    Periodontitis is an advanced stage of gum disease that develops when gingivitis is left untreated. It can damage the gums and bone that support your teeth.
+  </p>
 
-<p>
-Certain risk factors such as smoking, diabetes, poor oral hygiene, and skipping regular dental cleanings can increase your chances of developing periodontitis.
-</p>
+  <p>
+    As periodontitis progresses, gums may pull away from the teeth, creating pockets where bacteria can collect. This can lead to loose teeth, gum recession, bone loss, and tooth loss.
+  </p>
 
-<p>
-The good news is that periodontitis can be managed with professional dental care, deep cleanings, improved oral hygiene habits, and regular maintenance visits.
-</p>
+  <h4>Common Signs of Periodontitis:</h4>
 
-<h4>Common Signs of Periodontitis:</h4>
-
-<ul class="perio-list">
+  <ul class="perio-list">
     <li>Red, swollen, or bleeding gums</li>
     <li>Persistent bad breath</li>
     <li>Gums pulling away from teeth</li>
     <li>Loose or shifting teeth</li>
     <li>Bone loss around teeth</li>
     <li>Pain when chewing</li>
-</ul>
+  </ul>
 
-<p><strong>
-If you think you may have signs of periodontitis, it is important to schedule a dental visit early to help prevent permanent damage.
-</strong></p>
+  <p><strong>
+    If you think you may have signs of periodontitis, it is important to schedule a dental visit early to help prevent permanent damage.
+  </strong></p>
 
-<div style="text-align: center; margin-top: 30px;">
-    <h3 class="video-title">
-Watch to Learn About Periodontitis
-</h3>
+  <div style="text-align: center; margin-top: 30px;">
+    <h3>Watch to Learn About Periodontitis</h3>
 
-<video class="perio-video" controls>
-    <source src="Perio.mp4" type="video/mp4">
-</video>
+    <video class="perio-video" controls>
+      <source src="Perio.mp4" type="video/mp4">
+    </video>
+  </div>
 
 </div>
-
   <script>
     function toggleInfo(id) {
       const info = document.getElementById(id);
