@@ -13,3 +13,8 @@ I used HTML and CSS to build and style the website. I used Visual Studio Code as
 You can visit the live website here: https://dcb-z.github.io/dental-education-101/
 
 GitHub repository:[ https://github.com/dcb-z](https://github.com/dcb-z/dental-education-101)
+
+## What changed from Project 01 to Project 02?
+For Project 02, I improved the website’s overall design, organization, and functionality. I redesigned the homepage using a cleaner layout, improved typography and spacing, and added a softer color palette to create a more welcoming experience for users.
+
+I also added educational tabs for cavities, gingivitis, and periodontal disease to better organize the information. Additional improvements included embedding educational videos, adding comparison visuals between healthy and diseased gums, improving responsiveness across devices, and refining button styling and navigation. These changes made the website feel more interactive, polished, and user-friendly compared to the original plain version.
