@@ -1,295 +1,168 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-    .learn-section {
-    text-align: center;
-}
+    <title>Dental Education 101</title>
+    <style>
+        /* General Styles */
+        body {
+            background: linear-gradient(135deg, #f7f1e8, #dbeee9);
+            color: #031D44;
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 0;
+        }
 
-.button-group {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-    flex-wrap: wrap;
-    margin-top: 15px;
-}
-.gingivitis-video,
-.perio-video {
-    width: 50%;
-    max-width: 400px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 12px;
-}
-  #periodontitis {
-    text-align: center;
-}
+        header {
+            background-color: #B984DB;
+            color: #2e1a47;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-.perio-list {
-    display: inline-block;
-    text-align: left;
-}
-  .cavity-img {
-  display: block;
-  margin: 25px auto;
-  width: 100%;
-  max-width: 600px;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-}
-  body {
-    background: linear-gradient(135deg, #f7f1e8, #dbeee9);
-    color: #031D44;
-    font-family: Georgia, serif;
-    margin: 0;
-    padding: 40px;
-  }
+        h1 {
+            color: #031D44;
+            background-color: #DAB785;
+            padding: 25px;
+            border-radius: 18px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
 
-  h1 {
-    color: #031D44;
-    background-color: #DAB785;
-    padding: 25px;
-    border-radius: 18px;
-    text-align: center;
-  }
+        .container {
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: -30px auto 40px; 
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
 
-  h2 {
-    color: #04395E;
-    border-bottom: 3px solid #70A288;
-    padding-bottom: 10px;
-  }
+        .learn-section { text-align: center; }
 
-  p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
 
-  button {
-    background-color: #70A288;
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 20px;
-    font-weight: bold;
-  }
+        button {
+            background-color: #70A288;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
 
-  button:hover {
-    background-color: #D5896F;
-  }
-</style>
-  <title>Dental Education 101</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #F8E2D4;
-      color: #000000;
-      margin: 0;
-      padding: 0;
-    }
+        button:hover { background-color: #D5896F; }
 
-    header {
-      background-color: #B984DB;
-      color: #2e1a47;
-      padding: 25px;
-      text-align: center;
-    }
+        /* Content Sections */
+        .content-box {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            display: none; /* Hidden by default */
+        }
 
-    .container {
-      background-color: #ffffff;
-      max-width: 800px;
-      margin: 30px auto;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-    }
+        .cavity-img {
+            display: block;
+            margin: 25px auto;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+        }
 
-    h1, h2 {
-      color: #7209B7;
-    }
+        video {
+            width: 100%;
+            max-width: 500px;
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+        }
 
-    button {
-      background-color: #E2BD6B;
-      color: black;
-      border: none;
-      padding: 10px 15px;
-      margin: 10px 10px 10px 0;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    button:hover {
-      background-color: #d4a94f;
-    }
-
-    p {
-        line-height: 1.8;
-        text-align: center;
-        max-width: 900px;
-        margin: 20px auto;
-        font-size: 18px;
-    }
-  </style>
+        ul { text-align: left; display: inline-block; }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Dental Education 101</h1>
-      <p>
-Hey there! Have you ever felt nervous or scared to go to the dentist and let anxiety get the best of you? Maybe you’ve heard words like cavities, gingivitis, or periodontal disease and realized you weren’t exactly sure what they meant. Don’t worry…you’re not alone! 
 
-Dental Education 101 has your back by providing simple, beginner-friendly information to help you better understand common dental conditions, oral hygiene, and ways to keep your smile healthy. Our goal is to make dental education less intimidating, more approachable, and easier for everyone to understand. Learning about your oral health is the first step toward feeling more confident about your dental care journey!
-</p>
-  </header>
+<header>
+    <h1>Dental Education 101</h1>
+    <p style="max-width: 800px; margin: 0 auto; line-height: 1.6;">
+        Hey there! Have you ever felt nervous or scared to go to the dentist and let anxiety get the best of you? Maybe you’ve heard words like cavities, gingivitis, 
+        or periodontal disease and realized you weren’t exactly sure what they meant. Don’t worry…you’re not alone! Dental Education 101 has your back by providing simple, 
+        beginner-friendly information to help you better understand common dental conditions, oral hygiene, and ways to keep your smile healthy. Our goal is to make 
+        dental education less intimidating, more approachable, and easier for everyone to understand. Learning about your oral health is the first step toward feeling more confident 
+        about your dental care journey!
+    </p>
+</header>
 
-  <div class="container">
-      <div class="learn-section">
-    <h2>Learn More About Oral Health</h2>
-            
-    <div class="button-group">
-        <button onclick="toggleCavities()">What are Cavities?</button>
-        <button onclick="toggleInfo('gingivitis')">What is Gingivitis?</button>
-        <button onclick="toggleInfo('periodontitis')">What is Periodontitis?</button>
-    
+<div class="container">
+    <div class="learn-section">
+        <h2>Learn More About Oral Health</h2>
+        <div class="button-group">
+            <button onclick="toggleSection('cavities-content')">What are Cavities?</button>
+            <button onclick="toggleSection('gingivitis')">What is Gingivitis?</button>
+            <button onclick="toggleSection('periodontitis')">What is Periodontitis?</button>
+        </div>
     </div>
-
-    </div>
-
 </div>
 
-
-<div id="cavities-content" style="display: none;">
-
-  <p>
-Cavities (also called tooth decay) are damaged areas in your teeth that turn into small holes over time. 
-They happen when bacteria in your mouth feed on sugars from the food and drinks you consume.
-
-These bacteria create acids that slowly wear away the outer layer of your tooth, called enamel. 
-If this damage continues, it can go deeper into the tooth and cause pain, sensitivity, or even infection.
-
-Cavities can start small and may not hurt at first, which is why regular dental checkups are important.
-</p>
-<p><strong>Cavities are one of the most common health conditions, but they are also one of the most preventable.</strong></p>
-<p><strong>How do we get cavities?</strong></p>
-
-<ul>
-  <li>Eating sugary or sticky foods (like candy, soda, or snacks)</li>
-  <li>Not brushing and flossing regularly</li>
-  <li>Bacteria building up in plaque on your teeth</li>
-  <li>Frequent snacking or sipping drinks throughout the day</li>
-  <li>Not visiting the dentist for cleanings and checkups</li>
-</ul>
-
-<p>
-Over time, these habits allow acid to damage your teeth, leading to cavities.
-The good news is cavities are preventable with good oral hygiene and regular dental care.
-</p>
-
-  <img src="cavities.png" alt="Cavities comparison" class="cavity-img">
-  <p style="text-align:center; font-size:14px; color:#555;">
-Healthy teeth vs Decayed teeth
-</p>
-
+<!-- CAVITIES SECTION -->
+<div id="cavities-content" class="content-box">
+    <h3>What are Cavities?</h3>
+    <p>Cavities are damaged areas in your teeth that turn into small holes over time. They happen when bacteria feed on sugars and create acid that wears away your enamel.</p>
+    <h4>How do we get them?</h4>
+    <ul>
+        <li>Sugary or sticky foods</li>
+        <li>Missing brush/floss sessions</li>
+        <li>Plaque buildup</li>
+    </ul>
+    <img src="cavities.png" alt="Cavities comparison" class="cavity-img">
 </div>
- 
 
-
-<div id="gingivitis" style="display:none;">
-
-  <h3>What is Gingivitis?</h3>
-
-  <p>
-    Gingivitis is the early stage of gum disease, and it’s very common, but also reversible.
-    It happens when plaque, a sticky film of bacteria, builds up along the gumline and irritates your gums.
-  </p>
-
-  <p>
-    When plaque is not removed with brushing and flossing, it produces toxins that cause your gums to become red, swollen, and more sensitive.
-    You may notice bleeding when brushing or flossing, which is one of the first warning signs.
-  </p>
-
-  <p>
-    The good news is that gingivitis does not cause permanent damage at this stage.
-    With good oral hygiene and regular dental cleanings, your gums can return to a healthy state.
-  </p>
-
-  <h4>Common Signs of Gingivitis:</h4>
-  <ul>
-    <li>Red or swollen gums</li>
-    <li>Bleeding when brushing or flossing</li>
-    <li>Tender or sensitive gums</li>
-    <li>Bad breath</li>
-  </ul>
-
-  <p><strong>
-    If gingivitis is not treated, it can progress into a more serious oral condition called periodontitis.
-  </strong></p>
-    
-    <div style="text-align: center; margin-top: 30px;">
-        <h3 class="video-title">Watch How Gingivitis Develops</h3>
-
-  <video class="gingivitis-video" controls>
-    <source src="gingivitis.mp4" type="video/mp4">
-  </video>
-
-  </div>
-
-
-
-<div id="periodontitis" style="display:none;">
-
-  <h3>What is Periodontitis?</h3>
-
-  <p>
-    Periodontitis is an advanced stage of gum disease that develops when gingivitis is left untreated. It can damage the gums and bone that support your teeth.
-  </p>
-
-  <p>
-    As periodontitis progresses, gums may pull away from the teeth, creating pockets where bacteria can collect. This can lead to loose teeth, gum recession, bone loss, and tooth loss.
-  </p>
-
-  <h4>Common Signs of Periodontitis:</h4>
-
-  <ul class="perio-list">
-    <li>Red, swollen, or bleeding gums</li>
-    <li>Persistent bad breath</li>
-    <li>Gums pulling away from teeth</li>
-    <li>Loose or shifting teeth</li>
-    <li>Bone loss around teeth</li>
-    <li>Pain when chewing</li>
-  </ul>
-
-  <p><strong>
-    If you think you may have signs of periodontitis, it is important to schedule a dental visit early to help prevent permanent damage.
-  </strong></p>
-
-  <div style="text-align: center; margin-top: 30px;">
-    <h3>Watch to Learn About Periodontitis</h3>
-
-    <video class="perio-video" controls>
-      <source src="Perio.mp4" type="video/mp4">
-    </video>
-  </div>
-
+<!-- GINGIVITIS SECTION -->
+<div id="gingivitis" class="content-box">
+    <h3>What is Gingivitis?</h3>
+    <p>The early stage of gum disease. It's reversible! It happens when plaque irritates your gumline, making gums red or swollen.</p>
+    <h4>Signs to watch for:</h4>
+    <ul>
+        <li>Bleeding when brushing</li>
+        <li>Tender gums</li>
+        <li>Bad breath</li>
+    </ul>
+    <video controls><source src="gingivitis.mp4" type="video/mp4"></video>
 </div>
-  <script>
-    function toggleInfo(id) {
-      const info = document.getElementById(id);
-      if (info.style.display === "none") {
-        info.style.display = "block";
-      } else {
-        info.style.display = "none";
-      }
-    }
-  </script>
-  <script>
-function toggleCavities() {
-  var content = document.getElementById("cavities-content");
-  if (content.style.display === "none") {
-    content.style.display = "block";
-  } else {
-    content.style.display = "none";
-  }
-}
+
+<!-- PERIODONTITIS SECTION -->
+<div id="periodontitis" class="content-box">
+    <h3>What is Periodontitis?</h3>
+    <p>Advanced gum disease. This happens when gingivitis is left untreated, potentially damaging the bone that supports your teeth.</p>
+    <video controls><source src="Perio.mp4" type="video/mp4"></video>
+</div>
+
+<script>
+    function toggleSection(id) {
+        
+        const sections = document.querySelectorAll('.content-box');
+        sections.forEach(sec => {
+            if (sec.id !== id) sec.style.display = 'none';
+        });
+
+        const content = document.getElementById(id);
+        if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "block";
+        } else {
+            content.style.display = "none";
+        }
+    }
 </script>
+
 </body>
 </html>
